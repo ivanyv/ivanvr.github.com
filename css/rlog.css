@@ -3,15 +3,15 @@ html {
 }
 
 body {
-  font-size 100%;
+  font-size: 100%;
   margin: 1em;
-  font-family: Century Gothic, Apple Gothic, sans-serif;
+  font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
   background: #fff;
   border: 3px solid #84CE29;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Cambria, Georgia, Times, Times New Roman, serif;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
@@ -23,6 +23,11 @@ h1 {
 
 h2 {
   margin-top: 0.5em;
+}
+
+hr {
+  border: 1px solid #ffce00;
+  border-bottom-color: #ffe780
 }
 
 a {
@@ -53,7 +58,7 @@ a:hover {
   }
   .group li h3 {
     font-size: 1em;
-    font-family: Century Gothic, Apple Gothic, sans-serif;
+    font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
     font-weight: normal;
     margin: 0;
   }
@@ -63,6 +68,15 @@ a:hover {
     .group.disqus h2 {
       margin-bottom: 0.5em;
     }
+  .group.subscribe {
+    text-align: right;
+  }
+  .group.subscribe img {
+    border: none;
+  }
+  .group.subscribe a {
+    border: none;
+  }
 
 #content {
   padding: 0 21em 1em 1em;
@@ -71,6 +85,10 @@ a:hover {
   #content a {
     border-bottom: 1px solid #ddd;
   }
+
+#footer {
+  clear: both;
+}
 
 .back_to_index {
   display: inline-block;
@@ -82,4 +100,3 @@ a:hover {
   background-color: #E7F2DA;
   overflow: auto;
 }
-
