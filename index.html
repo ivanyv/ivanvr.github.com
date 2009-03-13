@@ -1,0 +1,12 @@
+---
+layout: default
+title: Sobre Ruby on Rails
+---
+  <h2>¿Qué es esto?</h2>
+  <p>Otro intento de blog. A ver cuanto dura este :)</p>
+  <div class="posts">{% for post in site.posts limit:3 %}
+    <div class="post">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | markdown }} <a href="{{ post.url }}">Leer &raquo;</a></p>
+    </div>
+  {% endfor %}</div>

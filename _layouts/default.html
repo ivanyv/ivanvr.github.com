@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es-mx">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta content='es-mx' http-equiv='Content-Language' />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Iván Vega" />
+
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <link rel="stylesheet" href="/css/rlog.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<h1 title="{{ page.title }}"><a href="/">Sobre Ruby on Rails</a></h1>
+ 
+{% include sidebar.html %}
+  
+<div id="content">{{ content }}</div>
+  
+<div if="footer">
+</div>
+
+</body>
+</html>
