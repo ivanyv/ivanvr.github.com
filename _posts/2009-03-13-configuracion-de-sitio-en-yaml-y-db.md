@@ -56,4 +56,3 @@ test:
 Ahora si creo que queda más claro porque lo del *eval* en el *initializer*. Me parece que el código se explica solo, pero si sigo en mi burbuja, pregunta y con gusto explico un poco más.
 
 [rsettings]: http://github.com/Squeegy/rails-settings/tree/master "rails-settings en GitHub"
-
