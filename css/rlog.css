@@ -74,7 +74,7 @@ a:hover {
   .group.subscribe img {
     border: none;
   }
-  .group.subscribe a {
+  .group.subscribe a, .group.subscribe a:hover {
     border: none;
   }
 
