@@ -90,6 +90,23 @@ blockquote {
     .group.disqus h2 {
       margin-bottom: 0.5em;
     }
+  .group.twitter {
+    margin-bottom: 1em;
+  }
+    .twitter ul {
+      padding-left: 0;
+    }
+    .twitter li {
+      list-style-type: none;
+      margin: 0;
+      border-bottom: 1px dashed #ddd;
+      margin-bottom: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    .twitter li span {
+      font-style: italic;
+      color: #444;
+    }
   .group.subscribe {
     text-align: right;
   }
