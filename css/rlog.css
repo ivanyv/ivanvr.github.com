@@ -41,10 +41,32 @@ a:hover {
   border-bottom: 1px dashed #84CE29 !important;
 }
 
+blockquote {
+  float: right;
+  margin: 1em 0 1em 1em;
+  padding: 0.5em;
+  border-bottom: 1px solid #ffe780;
+  border-top: 1px dotted #ffce00;
+  max-width: 50%;
+}
+  blockquote pre {
+    overflow: auto;
+    background-color: #e7f2da;
+    padding: 0.5em;
+  }
+  blockquote h3, blockquote p {
+    margin: 0;
+    color: #333;
+  }
+
 #sidebar {
   float: right;
-  width: 19em;
-  margin-right: 1em;
+  width: 30%;
+  padding-left: 2%;
+  margin-left: -2px;
+  margin-right: 2%;
+  /* In case I later want to add a line between the columns */
+  border-left: 1px solid #fff;
 }
   .group h2 {
     margin: 0 0 0 0;
@@ -79,9 +101,18 @@ a:hover {
   }
 
 #content {
-  padding: 0 21em 1em 1em;
+  margin: 0 0 1em -1px;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 62%;
+  float: left;
+  /* In case I later want to add a line between the columns */
+  border-right: 1px solid #fff;
 }
-
+  #content p {
+    margin: 0;
+    margin-bottom: 1em;
+  }
   #content a {
     border-bottom: 1px solid #ddd;
   }
@@ -99,4 +130,6 @@ a:hover {
   padding: 0.1em 0.8em;
   background-color: #E7F2DA;
   overflow: auto;
+  clear: both;
+  margin-bottom: 1em;
 }
