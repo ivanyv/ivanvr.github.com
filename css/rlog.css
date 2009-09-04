@@ -93,6 +93,12 @@ blockquote {
   .group.twitter {
     margin-bottom: 1em;
   }
+    .group.twitter a {
+      border-bottom: none !important;
+    }
+    .group.twitter a:hover {
+      border-bottom: none !important;
+    }
     .twitter ul {
       padding-left: 0;
     }
