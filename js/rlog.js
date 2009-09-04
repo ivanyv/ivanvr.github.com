@@ -19,7 +19,7 @@ function relative_time(time_value) {
     hours = parseInt(delta / 3600);
     return 'hace ' + hours.toString() + (hours > 1 ? ' horas' : ' hora');
   } else if (delta < (48*60*60)) {
-    return 'hace un día';
+    return 'ayer';
   } else {
     return 'hace ' + parseInt(delta / 86400).toString() + ' días';
   }
