@@ -11,15 +11,17 @@ function relative_time(time_value) {
   } else if (delta < 120) {
     return 'about a minute ago';
   } else if (delta < (45*60)) {
-    return ('hace ' + parseInt(delta / 60)).toString() + ' minutos';
+    minutes = parseInt(delta / 60);
+    return 'hace ' + minutes.toString() + (minutes > 1 ? ' minutos' : ' minuto');
   } else if (delta < (90*60)) {
     return 'about an hour ago';
   } else if(delta < (24*60*60)) {
-    return 'hace como ' + (parseInt(delta / 3600)).toString() + ' horas';
+    hours = parseInt(delta / 3600);
+    return 'hace ' + hours.toString() + (hours > 1 ? ' horas' : ' hora');
   } else if (delta < (48*60*60)) {
     return 'hace un día';
   } else {
-    return ('hace ' + parseInt(delta / 86400)).toString() + ' días';
+    return 'hace ' + parseInt(delta / 86400).toString() + ' días';
   }
 }
 function twitterCallback(obj) {
